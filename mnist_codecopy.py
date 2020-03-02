@@ -192,11 +192,11 @@ def generate_adv_images(model, device, kwargs):
 
         # epsilon =0.01
         # iterNum=10
-        iterNum =[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-        epsilonarr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        iterNum =[10, 20, 15, 10, 38, 13, 10, 30, 20, 10]
+        epsilonarr = [0.002, 0.01, 0.01, 0.001, 0.009, 0.011, 0.005, 0.01, 0.01, 0.005]
 
-        iterNum= [i *200 for i in iterNum]
-        epsilonarr = [i /10000 for i in epsilonarr]
+        # iterNum= [i *200 for i in iterNum]
+        # epsilonarr = [i /10000 for i in epsilonarr]
         # epsilonarr = np.ones(10)
         # epsilonarr = epsilonarr * epsilon
         # BestvalS = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
